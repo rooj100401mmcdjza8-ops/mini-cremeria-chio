@@ -1,12 +1,13 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}Mi Negocio{% endblock %}</title>
+    <title>{% block title %}Mini Cremeria Chio {% endblock %}</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: Arial, sans-serif; background: #f4f6f8; color: #333; }
+        body { font-family: Arial, sans-serif; background: #f4f6f8; color: #33333321; }
         header {
             background: #1e293b; color: #fff; padding: 15px 30px;
             display: flex; justify-content: space-between; align-items: center;
@@ -61,9 +62,10 @@
         <nav>
           
 </nav><nav>
+    <img src="{% static 'img/chio.png' %}" width="70" alt="Logo Chio">
     <a href="{% url 'inicio' %}">Inicio</a>
     <a href="{% url 'lista_productos' %}">Productos</a>
-    <a href="{% url 'lista_categorias' %}">Categorías</a>
+    <a href="{% url 'lista_categorias' %}">Categorias</a>
     <a href="{% url 'lista_clientes' %}">Clientes</a>
 
     {% if user.is_authenticated %}
