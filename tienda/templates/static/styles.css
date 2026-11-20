@@ -1,12 +1,11 @@
-:root {
---color-primary: #D666A7;
---color-secondary: #7C7CDF;
---color-bg: #FFFFFF;
-
---color-text: #000000;
---radius: 8px;
---space: 1rem;
+body {
+  background: #FFF5F5;
+  color: #222222;
 }
-@media (max-width: 768px) {
-/* menú colapsado, tablas en tarjetas, etc. */
+.card, .container {
+  background: white;
+  color: #222222;
+}
+label, h2, h3, p {
+  color: #222222 !important;
 }
